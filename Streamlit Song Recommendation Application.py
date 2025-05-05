@@ -10,7 +10,7 @@ import sklearn
 import umap
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler
-import time
+# import time
 
 ## 2. Set up Streamlit Application UI
 
@@ -57,9 +57,9 @@ st.write("🔍 **Searching for your next favorite track...**")
 loader = st.empty()
 emojis = ["🎵", "🎶", "🎼", "🎧", "🎷", "🎸", "🥁", "🎹"]
 
-for i in range(16):
-    loader.markdown(f"<h1 style='text-align: center;'>{emojis[i % len(emojis)]}</h1>", unsafe_allow_html=True)
-    time.sleep(1)
+# for i in range(16):
+#     loader.markdown(f"<h1 style='text-align: center;'>{emojis[i % len(emojis)]}</h1>", unsafe_allow_html=True)
+#     time.sleep(1)
 
 ## 4. Use ML to find the best song recommendation to user's song choice
 def song_recommendation_nn(df, song_input):
