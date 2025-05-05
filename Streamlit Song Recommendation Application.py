@@ -19,7 +19,7 @@ st.set_page_config(
     page_icon="🎵",
     layout="wide",
 )
-st.image("my_song_logo.png", width=250, )
+# st.image("my_song_logo.png", width=250, )
 st.title("Discover Your Next Favorite Song!")
 
 # Custom CSS to override the background color
